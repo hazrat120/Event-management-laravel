@@ -8,33 +8,33 @@ use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
-    public function run(): void
+    public function run()
     {
         DB::table('users')->insert([
             [
-                'firstName' => 'Admin',
-                'lastName' => 'User',
-                'email' => 'admin@example.com',
-                'mobile' => '01711111111',
-                'password' => Hash::make('password123'),
+                'firstName' => 'Hazrat',
+                'lastName' => 'Ali',
+                'email' => 'hazrat.ali@gmail.com',
+                'mobile' => '01711223344',
+                'password' => Hash::make('#123456Ali@'),
                 'otp' => '123456',
             ],
             [
-                'firstName' => 'Kamal',
-                'lastName' => 'Hassan',
-                'email' => 'kamal@example.com',
-                'mobile' => '01722222222',
-                'password' => Hash::make('password123'),
+                'firstName' => 'Md',
+                'lastName' => 'Munna',
+                'email' => 'md.munna@gmail.com',
+                'mobile' => '01811223343',
+                'password' => Hash::make('#123456Ali@'),
                 'otp' => '123456',
             ],
             [
-                'firstName' => 'Nusrat',
-                'lastName' => 'Jahan',
-                'email' => 'nusrat@example.com',
-                'mobile' => '01733333333',
-                'password' => Hash::make('password123'),
+                'firstName' => 'Rajib',
+                'lastName' => 'Hossain',
+                'email' => 'rajib.hossain@gmail.com',
+                'mobile' => '01811223345',
+                'password' => Hash::make('#123456Ali@'),
                 'otp' => '123456',
-            ]
+            ],
         ]);
     }
-} 
+}

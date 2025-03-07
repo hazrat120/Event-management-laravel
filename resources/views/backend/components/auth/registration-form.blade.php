@@ -3,7 +3,7 @@
         <div class="col-md-10 col-lg-10 center-screen">
             <div class="card animated fadeIn w-100 p-3">
                 <div class="card-body">
-                    <h4>Sign Up</h4>
+                    <h4 class="text-center mb-4 fw-bold text-primary">SIGN UP</h4>
                     <hr/>
                     <div class="container-fluid m-0 p-0">
                         <div class="row m-0 p-0">
@@ -28,10 +28,15 @@
                                 <input id="password" placeholder="User Password" class="form-control" type="password"/>
                             </div>
                         </div>
-                        <div class="row m-0 p-0">
-                            <div class="col-md-4 p-2">
-                                <button onclick="onRegistration()" class="btn mt-3 w-100  bg-gradient-primary">Complete</button>
+                        <div class="row m-0 p-0 d-flex justify-content-center">
+                            <div class=" col-md-4 p-2">
+                                <button onclick="onRegistration()" class=" btn mt-3 w-100  bg-gradient-primary">Complete</button>
                             </div>
+                        </div>
+                        <div>
+                            <span>
+                                <a class="text-center ms-3 h6" href="{{url('/')}}">Back</a>
+                            </span>
                         </div>
                     </div>
                 </div>

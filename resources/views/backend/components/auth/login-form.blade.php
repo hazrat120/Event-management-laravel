@@ -5,13 +5,16 @@
                 <div class="card-body">
                     <h4 class="text-center mb-4 fw-bold text-primary">SIGN IN</h4>
                     <br/>
-                    <input id="email" placeholder="User Email" class="form-control" type="email"/>
+                    <input id="email" placeholder="hazrat.ali@gmail.com" class="form-control" type="email"/>
                     <br/>
-                    <input id="password" placeholder="User Password" class="form-control" type="password"/>
+                    <input id="password" placeholder="#123456Ali@" class="form-control" type="password"/>
                     <br/>
                     <button onclick="SubmitLogin()" class="btn w-100 bg-gradient-primary">Next</button>
                     <hr/>
-                    <div class="float-end mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>
+                            <a class="text-center ms-3 h6" href="{{url('/')}}">Back</a>
+                        </span>
                         <span>
                             <a class="text-center ms-3 h6" href="{{url('/userRegistration')}}">Sign Up </a>
                             <span class="ms-1">|</span>

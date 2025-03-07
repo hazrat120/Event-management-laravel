@@ -7,33 +7,25 @@ use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
-    public function run(): void
+    public function run()
     {
         DB::table('categories')->insert([
             [
-                'name' => 'বাংলাদেশী উৎসব',  // Bangladeshi Festivals
+                'name' => 'Tech Conference',
                 'user_id' => 1,
             ],
             [
-                'name' => 'সাংস্কৃতিক অনুষ্ঠান',  // Cultural Events
-                'user_id' => 1,
-            ],
-            [
-                'name' => 'খাবার উৎসব',  // Food Festival
-                'user_id' => 1,
-            ],
-            [
-                'name' => 'প্রযুক্তি সম্মেলন',  // Tech Conference
-                'user_id' => 1,
-            ],
-            [
-                'name' => 'ক্রীড়া ইভেন্ট',  // Sports Event
+                'name' => 'Cultural Festival',
                 'user_id' => 1,
             ],
             [
                 'name' => 'Business Summit',
-                'user_id' => 1,
+                'user_id' => 2,
+            ],
+            [
+                'name' => 'Food Festival',
+                'user_id' => 2,
             ],
         ]);
     }
-} 
+}
